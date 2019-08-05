@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>主页面</title>
+</head>
+<body>
+
+<h2 th:text="'欢迎您:'+${session.user.username }"></h2>
+<h3>下面是您账号的具体信息</h3>
+<p th:text="'用户I D：'+${session.user.id}">[]</p>
+<p th:text="'用户账号：'+${session.user.username}"></p>
+<p th:text="'用户密码：'+${session.user.password}"></p>
+<p th:text="'用户年龄：'+${session.user.age}"></p>
+
+
+</body>
+</html>
